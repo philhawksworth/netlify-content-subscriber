@@ -12,7 +12,7 @@ gulp.task("get:content", function(done) {
   axios.get(url)
     .then(function (response) {
       console.log('response :', response.data);
-        project.storeData(project.buildSrc + '/site/_data/news.json', response.data);
+        project.storeData(project.buildSrc + '/site/_data/news.json', JSON.stringify(response.data));
         done();
     })
     .catch(function (error) {
