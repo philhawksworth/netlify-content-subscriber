@@ -40,7 +40,7 @@ gulp.task('build:local', gulp.series(
   Let's gwt the data we need and then build this sucker.
 */
 gulp.task('build', gulp.series(
-  // 'get:data',
+  'get:content',
   'generate',
   'assets'
 ));
