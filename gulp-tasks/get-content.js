@@ -1,7 +1,6 @@
 var project  = require('./_project.js');
 var gulp     = require('gulp');
 var axios    = require('axios');
-var gravatar = require('gravatar');
 
 // load environment variables
 
